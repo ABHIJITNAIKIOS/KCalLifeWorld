@@ -29,7 +29,7 @@
     [Fabric with:@[[Crashlytics class]]];
     
     
-    
+    NSLog(@"heloo");
     
 //    [FIRApp configure];
     
