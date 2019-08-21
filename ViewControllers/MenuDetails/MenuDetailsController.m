@@ -49,7 +49,7 @@
     [super viewDidLoad];
     
     sectiontemp = 0;
-    
+    NSLog(@"is project ko do saal hogayae");
     [_imgnew setHidden:YES];
     [_imgsoldout setHidden:YES];
     [_imgpopular setHidden:YES];
