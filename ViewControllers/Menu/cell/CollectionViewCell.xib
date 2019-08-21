@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="138" height="38"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="138" height="38"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBI-JC-lPI">
+                        <rect key="frame" x="20" y="9" width="98" height="20"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
+                        <color key="textColor" red="0.41176470588235292" green="0.41176470588235292" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tj6-iR-nBz">
+                        <rect key="frame" x="20" y="31.5" width="98" height="3"/>
+                        <color key="backgroundColor" red="1" green="0.57647058823529407" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="3" id="3BO-bP-JUR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Tj6-iR-nBz" firstAttribute="leading" secondItem="SEy-5g-ep8" secondAttribute="leading" constant="20" id="DAa-l5-pSy"/>
+                <constraint firstItem="SEy-5g-ep8" firstAttribute="bottom" secondItem="Tj6-iR-nBz" secondAttribute="bottom" constant="3.5" id="JxX-vr-YrB"/>
+                <constraint firstItem="sBI-JC-lPI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="S0u-C8-R7G"/>
+                <constraint firstAttribute="trailing" secondItem="sBI-JC-lPI" secondAttribute="trailing" constant="20" id="VZ0-pJ-kdS"/>
+                <constraint firstItem="SEy-5g-ep8" firstAttribute="trailing" secondItem="Tj6-iR-nBz" secondAttribute="trailing" constant="20" id="ein-bU-RvT"/>
+                <constraint firstItem="sBI-JC-lPI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="9" id="g5m-ea-f36"/>
+                <constraint firstItem="Tj6-iR-nBz" firstAttribute="top" secondItem="sBI-JC-lPI" secondAttribute="bottom" constant="2.5" id="qA2-EX-oT4"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="138" height="38"/>
+            <connections>
+                <outlet property="lblBottom" destination="Tj6-iR-nBz" id="68L-UB-DU6"/>
+                <outlet property="lblName" destination="sBI-JC-lPI" id="pFM-OQ-mAF"/>
+            </connections>
+            <point key="canvasLocation" x="56" y="6"/>
+        </collectionViewCell>
+    </objects>
+</document>

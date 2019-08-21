@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DeliverylocationController">
+            <connections>
+                <outlet property="tbldata" destination="IzB-31-SeU" id="fvi-d1-mgt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IzB-31-SeU">
+                    <rect key="frame" x="8" y="9" width="304" height="457"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="cTl-fb-H8N"/>
+                        <outlet property="delegate" destination="-1" id="z1v-R6-L40"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add new delivery location" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hQ-X5-gCV">
+                    <rect key="frame" x="46" y="483" width="228" height="62"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="8hQ-X5-gCV" secondAttribute="height" multiplier="114:31" id="LR2-uA-RPm"/>
+                        <constraint firstAttribute="height" constant="62" id="yHH-UY-4gs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                    <color key="textColor" red="0.46666666670000001" green="0.74117647060000003" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTT-1o-ZjF">
+                    <rect key="frame" x="46" y="483" width="228" height="62"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="1"/>
+                    <connections>
+                        <action selector="btnaddAddress:" destination="-1" eventType="touchUpInside" id="XDu-TW-bHa"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="IzB-31-SeU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="9" id="0Uh-Zl-4k5"/>
+                <constraint firstItem="sTT-1o-ZjF" firstAttribute="trailing" secondItem="8hQ-X5-gCV" secondAttribute="trailing" id="3JR-Qx-9Zk"/>
+                <constraint firstItem="sTT-1o-ZjF" firstAttribute="top" secondItem="8hQ-X5-gCV" secondAttribute="top" id="CoZ-E9-S1C"/>
+                <constraint firstItem="8hQ-X5-gCV" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="Ezs-NC-uGz"/>
+                <constraint firstItem="sTT-1o-ZjF" firstAttribute="leading" secondItem="8hQ-X5-gCV" secondAttribute="leading" id="MrR-Hv-wmZ"/>
+                <constraint firstItem="sTT-1o-ZjF" firstAttribute="top" secondItem="IzB-31-SeU" secondAttribute="bottom" constant="17" id="YBc-gG-aEA"/>
+                <constraint firstItem="sTT-1o-ZjF" firstAttribute="bottom" secondItem="8hQ-X5-gCV" secondAttribute="bottom" id="aXP-VG-K1C"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="IzB-31-SeU" secondAttribute="trailing" constant="8" id="faJ-id-Fgj"/>
+                <constraint firstItem="IzB-31-SeU" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="8" id="ty0-Rc-5mB"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="8hQ-X5-gCV" secondAttribute="bottom" constant="23" id="xAi-Pp-I27"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>

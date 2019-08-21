@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="77" id="KGk-i7-Jjw" customClass="Leftmenu1TableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="76.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Follow Us" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUY-R8-WgZ">
+                        <rect key="frame" x="22" y="5" width="210" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="49k-FF-7JR"/>
+                            <constraint firstAttribute="width" constant="210" id="K7F-aT-293"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                        <color key="textColor" red="0.42352941176470588" green="0.42352941176470588" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="highlightedColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_insta" translatesAutoresizingMaskIntoConstraints="NO" id="J2C-1n-1pT">
+                        <rect key="frame" x="22" y="34" width="27" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="27" id="6zj-R2-zz2"/>
+                            <constraint firstAttribute="height" constant="27" id="ZwJ-2F-kZs"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iqx-lN-qdz">
+                        <rect key="frame" x="22" y="34" width="27" height="27"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_twit" translatesAutoresizingMaskIntoConstraints="NO" id="gng-LK-9cZ">
+                        <rect key="frame" x="78" y="34" width="27" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="27" id="fgl-SR-H7o"/>
+                            <constraint firstAttribute="height" constant="27" id="gu3-de-xct"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIz-VV-SjK">
+                        <rect key="frame" x="78" y="34" width="27" height="27"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_facebook" translatesAutoresizingMaskIntoConstraints="NO" id="qEi-TW-sbT">
+                        <rect key="frame" x="129" y="34" width="27" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="27" id="5Vd-sD-e3N"/>
+                            <constraint firstAttribute="height" constant="27" id="Ra0-mR-d3F"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="taV-2y-vZ9">
+                        <rect key="frame" x="129" y="34" width="27" height="27"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RX7-pT-qT7">
+                        <rect key="frame" x="16" y="72" width="202" height="1"/>
+                        <color key="backgroundColor" red="0.77647058823529413" green="0.77254901960784317" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="mg8-fy-u6e"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.77647058823529413" green="0.77254901960784317" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gng-LK-9cZ" firstAttribute="leading" secondItem="J2C-1n-1pT" secondAttribute="trailing" constant="29" id="34I-fQ-OM8"/>
+                    <constraint firstItem="qEi-TW-sbT" firstAttribute="top" secondItem="WUY-R8-WgZ" secondAttribute="bottom" constant="4" id="5AR-zt-0kg"/>
+                    <constraint firstItem="RX7-pT-qT7" firstAttribute="top" secondItem="qEi-TW-sbT" secondAttribute="bottom" constant="11" id="882-rg-D2s"/>
+                    <constraint firstItem="J2C-1n-1pT" firstAttribute="top" secondItem="WUY-R8-WgZ" secondAttribute="bottom" constant="4" id="8PV-AZ-XL3"/>
+                    <constraint firstItem="WUY-R8-WgZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="22" id="EWu-H7-y7m"/>
+                    <constraint firstItem="qEi-TW-sbT" firstAttribute="leading" secondItem="gng-LK-9cZ" secondAttribute="trailing" constant="24" id="KHQ-BQ-Slq"/>
+                    <constraint firstItem="J2C-1n-1pT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="22" id="Sft-5h-eBa"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="RX7-pT-qT7" secondAttribute="trailing" constant="86" id="TRK-io-mSR"/>
+                    <constraint firstItem="WUY-R8-WgZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="YBg-zQ-a1h"/>
+                    <constraint firstItem="RX7-pT-qT7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="gT4-5g-WJC"/>
+                    <constraint firstItem="gng-LK-9cZ" firstAttribute="top" secondItem="WUY-R8-WgZ" secondAttribute="bottom" constant="4" id="w9v-9h-J5E"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="btnfb" destination="taV-2y-vZ9" id="W6V-HJ-ezn"/>
+                <outlet property="btninsta" destination="Iqx-lN-qdz" id="JDh-xy-ILF"/>
+                <outlet property="btntwitter" destination="RIz-VV-SjK" id="FbF-rf-kfK"/>
+                <outlet property="lblborder1" destination="RX7-pT-qT7" id="J4c-0G-NM5"/>
+            </connections>
+            <point key="canvasLocation" x="-79" y="66.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_facebook" width="17" height="32"/>
+        <image name="ic_insta" width="29" height="30"/>
+        <image name="ic_twit" width="31.5" height="29"/>
+    </resources>
+</document>

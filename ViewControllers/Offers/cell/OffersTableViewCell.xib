@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="257" id="KGk-i7-Jjw" customClass="OffersTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="257"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="256.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholderfood" translatesAutoresizingMaskIntoConstraints="NO" id="JzQ-jI-OSl">
+                        <rect key="frame" x="16" y="11" width="288" height="161"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="161" id="sts-AO-Qzg"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Every friday, we're going you a free desert" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i24-dA-Xpk">
+                        <rect key="frame" x="16" y="183" width="288" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="288" id="1in-QY-IbB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                        <color key="textColor" red="0.42352941176470588" green="0.42352941176470588" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXV-zW-e1E">
+                        <rect key="frame" x="79" y="217.5" width="162" height="30"/>
+                        <color key="backgroundColor" red="0.46666666670000001" green="0.74117647060000003" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="4Vs-AC-ZUq"/>
+                            <constraint firstAttribute="width" constant="162" id="QUN-Y5-jFp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                        <state key="normal" title="ORDER NOW">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="i24-dA-Xpk" secondAttribute="trailing" constant="16" id="124-jH-N57"/>
+                    <constraint firstItem="JzQ-jI-OSl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="S0D-4k-jI9"/>
+                    <constraint firstItem="i24-dA-Xpk" firstAttribute="top" secondItem="JzQ-jI-OSl" secondAttribute="bottom" constant="11" id="UOb-FR-Lkt"/>
+                    <constraint firstItem="i24-dA-Xpk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="bpv-B6-bk4"/>
+                    <constraint firstItem="JzQ-jI-OSl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="gUL-hN-PVl"/>
+                    <constraint firstItem="zXV-zW-e1E" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="oYq-5f-E7G"/>
+                    <constraint firstAttribute="trailing" secondItem="JzQ-jI-OSl" secondAttribute="trailing" constant="16" id="sHM-7n-7fL"/>
+                    <constraint firstAttribute="bottom" secondItem="zXV-zW-e1E" secondAttribute="bottom" constant="9" id="uzn-Kn-LT4"/>
+                    <constraint firstItem="zXV-zW-e1E" firstAttribute="top" secondItem="i24-dA-Xpk" secondAttribute="bottom" constant="16.5" id="wsk-Tx-cRC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="btnorder" destination="zXV-zW-e1E" id="iH7-UC-mYN"/>
+                <outlet property="img" destination="JzQ-jI-OSl" id="QhU-As-9L5"/>
+                <outlet property="lbltext" destination="i24-dA-Xpk" id="M7f-DY-IBF"/>
+            </connections>
+            <point key="canvasLocation" x="25.600000000000001" y="156.07196401799101"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="placeholderfood" width="195" height="88"/>
+    </resources>
+</document>

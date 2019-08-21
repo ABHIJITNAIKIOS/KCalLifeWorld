@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaymentViewController">
+            <connections>
+                <outlet property="tblCardList" destination="TLu-K3-PEU" id="qHv-gF-NvH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TLu-K3-PEU">
+                    <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                    <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="8CU-B1-cgH"/>
+                        <outlet property="delegate" destination="-1" id="Bma-m3-oFf"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2bA-3A-cH3" userLabel="viewaddcard">
+                    <rect key="frame" x="0.0" y="570" width="320" height="77"/>
+                    <subviews>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="atm" translatesAutoresizingMaskIntoConstraints="NO" id="B43-I1-EWm">
+                            <rect key="frame" x="18" y="26.5" width="30" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="BbT-is-qqh"/>
+                                <constraint firstAttribute="height" constant="22" id="CAf-BS-0iu"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cug-vw-r9N">
+                            <rect key="frame" x="68" y="26" width="55.5" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="D1n-1a-Xx2"/>
+                                <constraint firstAttribute="width" constant="55.5" id="alP-3g-UDc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="13"/>
+                            <color key="textColor" red="0.46666666670000001" green="0.74117647060000003" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZQ-QT-mVC">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="77" id="vHS-hG-mmY"/>
+                            </constraints>
+                            <connections>
+                                <action selector="btnaddCardTapped:" destination="-1" eventType="touchUpInside" id="2cu-by-XYM"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="B43-I1-EWm" firstAttribute="top" secondItem="2bA-3A-cH3" secondAttribute="top" constant="26.5" id="Q8e-pf-3cb"/>
+                        <constraint firstAttribute="height" constant="77" id="SUc-ba-KHp"/>
+                        <constraint firstItem="cZQ-QT-mVC" firstAttribute="leading" secondItem="2bA-3A-cH3" secondAttribute="leading" id="V7f-SL-8MM"/>
+                        <constraint firstAttribute="trailing" secondItem="cZQ-QT-mVC" secondAttribute="trailing" id="Vgn-uY-eu2"/>
+                        <constraint firstItem="cug-vw-r9N" firstAttribute="leading" secondItem="B43-I1-EWm" secondAttribute="trailing" constant="20" id="dFN-bI-xCL"/>
+                        <constraint firstItem="B43-I1-EWm" firstAttribute="leading" secondItem="2bA-3A-cH3" secondAttribute="leading" constant="18" id="i7C-VU-glG"/>
+                        <constraint firstItem="cZQ-QT-mVC" firstAttribute="top" secondItem="2bA-3A-cH3" secondAttribute="top" id="mqz-Mh-Uvt"/>
+                        <constraint firstItem="cug-vw-r9N" firstAttribute="top" secondItem="2bA-3A-cH3" secondAttribute="top" constant="26" id="uHA-kI-hjc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="TLu-K3-PEU" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="CPM-g2-R8i"/>
+                <constraint firstItem="2bA-3A-cH3" firstAttribute="top" secondItem="TLu-K3-PEU" secondAttribute="bottom" constant="2" id="Frc-Hm-lBR"/>
+                <constraint firstItem="TLu-K3-PEU" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="LTo-kr-dUR"/>
+                <constraint firstItem="2bA-3A-cH3" firstAttribute="leading" secondItem="TLu-K3-PEU" secondAttribute="leading" id="Qve-5l-Snv"/>
+                <constraint firstItem="TLu-K3-PEU" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="T8W-Bz-DbM"/>
+                <constraint firstItem="TLu-K3-PEU" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="WCo-U5-nEW"/>
+                <constraint firstItem="2bA-3A-cH3" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Wml-Ye-1MQ"/>
+                <constraint firstItem="TLu-K3-PEU" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="XG6-F1-H2n"/>
+                <constraint firstItem="TLu-K3-PEU" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="cdK-Cd-eUu"/>
+                <constraint firstItem="2bA-3A-cH3" firstAttribute="trailing" secondItem="TLu-K3-PEU" secondAttribute="trailing" id="qi4-R0-1hc"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="2bA-3A-cH3" secondAttribute="trailing" id="uo0-Oz-reA"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="2bA-3A-cH3"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="61.875" y="78.16901408450704"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="atm" width="36" height="24.5"/>
+    </resources>
+</document>

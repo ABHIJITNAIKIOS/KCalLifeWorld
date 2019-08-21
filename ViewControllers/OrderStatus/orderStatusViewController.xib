@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="orderStatusViewController">
+            <connections>
+                <outlet property="imggif" destination="Epc-3F-Ix8" id="maI-Y1-578"/>
+                <outlet property="lblmessage" destination="IDb-C9-dDq" id="GxB-8F-eWH"/>
+                <outlet property="lblorderno" destination="ta2-Zx-Fdp" id="zFZ-GB-Cyw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="App_DRIVER2.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Epc-3F-Ix8" customClass="FLAnimatedImageView">
+                    <rect key="frame" x="0.0" y="41" width="320" height="224"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="BOg-Id-at7"/>
+                        <constraint firstAttribute="height" constant="224" id="I5y-t3-3Ii"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBA-3u-oiS">
+                    <rect key="frame" x="78" y="267" width="164" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="164" id="dyj-xL-V32"/>
+                        <constraint firstAttribute="height" constant="29" id="mV2-PG-BDa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                    <color key="textColor" red="0.46666666670000001" green="0.74117647060000003" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDb-C9-dDq">
+                    <rect key="frame" x="31.5" y="344" width="257" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="257" id="MJx-z2-jgR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                    <color key="textColor" red="0.46666666670000001" green="0.74117647060000003" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ta2-Zx-Fdp">
+                    <rect key="frame" x="78" y="377.5" width="164" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="JK6-cr-z7i"/>
+                        <constraint firstAttribute="width" constant="164" id="Lfi-2A-Km1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                    <color key="textColor" red="0.42352941179999998" green="0.42352941179999998" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hBA-3u-oiS" firstAttribute="top" secondItem="Epc-3F-Ix8" secondAttribute="bottom" constant="2" id="2AY-2T-5qj"/>
+                <constraint firstItem="hBA-3u-oiS" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="3ue-0c-k35"/>
+                <constraint firstItem="ta2-Zx-Fdp" firstAttribute="top" secondItem="IDb-C9-dDq" secondAttribute="bottom" constant="33.5" id="CkC-fO-uNy"/>
+                <constraint firstItem="Epc-3F-Ix8" firstAttribute="centerY" secondItem="Q5M-cg-NOt" secondAttribute="centerY" multiplier="0.8" constant="-82.200000000000017" id="IqU-7w-7ug"/>
+                <constraint firstItem="ta2-Zx-Fdp" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="QVy-lJ-KuF"/>
+                <constraint firstItem="IDb-C9-dDq" firstAttribute="top" secondItem="hBA-3u-oiS" secondAttribute="bottom" constant="48" id="TZl-g5-t9S"/>
+                <constraint firstItem="Epc-3F-Ix8" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="Ut8-vF-DiN"/>
+                <constraint firstItem="IDb-C9-dDq" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="qIN-ZU-CPa"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="31.875" y="77.112676056338032"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="App_DRIVER2.gif" width="800" height="1134"/>
+    </resources>
+</document>
