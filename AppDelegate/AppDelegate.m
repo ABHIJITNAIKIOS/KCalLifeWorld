@@ -28,6 +28,9 @@
     
     [Fabric with:@[[Crashlytics class]]];
     
+    
+    
+    
 //    [FIRApp configure];
     
     locationManager = [[CLLocationManager alloc] init];
